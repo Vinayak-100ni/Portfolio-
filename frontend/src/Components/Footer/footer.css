@@ -1,0 +1,63 @@
+.Footer{
+    display: grid;
+    padding: 3vmax;
+    grid-template-columns: 1fr 200px;
+}
+
+.Footer >div>h5{
+    color: black;
+    width: 120px;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.Footer>div>p{
+    width: 60%;
+}
+
+.Footer>div>h6{
+    padding: 10px 0;
+}
+
+.Footer>div:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Footer>div>a{
+    transition: all 0.3s;
+    font-size: 3vmax;
+}
+
+.Footer>div>a:nth-child(2):hover{
+color: red;
+}
+
+.Footer>div>a:nth-child(3):hover{
+    color: rgb(13, 13, 189);
+}
+.Footer>div>a:nth-child(4):hover{
+        color: rgb(176, 224, 172);
+ }
+ .footerContactBtn{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 120px;
+    transition: all .5s;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid white ;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+ }
+ .footerContactBtn>p{
+    color: white;
+ }
+ .footerContactBtn:hover{
+   background-color: unset;
+ }
+ .footerContactBtn>p:hover{
+    color: black;
+ }

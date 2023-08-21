@@ -1,0 +1,70 @@
+->>> npm i react-router-dom three axios overlay-navbar @reduxjs/toolkit 
+->>> npm install @mui/material @emotion/react @emotion/styled @mui/icons-material react-icons
+->>> npm i react-redux 
+
+-->create components home header
+
+-->import <ReactNavbar/> from overlay-navbar in header component
+
+-->import font style in app.css
+
+-->design header 
+-->design Home 
+->> create canvse using THREE (use Effect[one time run] )
+->>home Container. (Creating typoGraphy using material ui),
+
+-->adding timeLine using THREE timeline keywords
+
+-->create a 3D box skill
+-->creating 3d box shadow
+-->creating a strip of icons
+
+-->about
+-->project
+-->contact  background-image: linear-gradient(to bottom,hsl(250,100%,75%),black);
+-->admin login...
+
+                    -------------------------------------->backend <------------------------------------------
+npm init 
+entry point : (index.js) backend/server.js
+npm i express mongoose dotenv cloudinary cookie-parser nodemailer jsonwebtoken
+
+backend _file app.js server.js
+
+add script in package.json->>
+
+"scripts": {
+    "dev":"nodemon backend/server.js"
+  },
+
+  "main": "backend/server.js",
+  <!-- "type":"module", --> for import express (instead of "require")
+  "dependencies": {
+
+    >> app.js
+    >>server -->connect server with app(express)
+
+    create config.env file
+    create database.js file and connect it with the server.js
+
+    --------------------------->>>>>>>>basic backend is completed<<<<<<<<<<<<<<<<<<<-------------------------
+    create model ,controller,routes folder
+    model>>user.js
+
+    routes>>user.js.....
+
+    contoller >>user.js........
+    create mondodb server
+
+    then create a middleware folder for authentication 
+    then create sentmail.js ===>(using nodemailer);
+    using mailtrap for authentication
+
+    cloudinary 
+    add some controller for delete and update projects timeline'
+
+    goto mongodb and create user
+
+    ......................................redux bhai ki entry time 00:44 19-08-2023 frontend mein...................
+
+time to link frontend with back enddddd 

@@ -1,0 +1,82 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.loginContainer{
+    width: 50%;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px white;
+}
+.loginForm{
+    background-color: inherit;
+    height: 70vh;
+    border-radius: 5px;
+    padding: 2vmax;
+}
+.loginForm>h4{
+    display: flex;
+    letter-spacing: 15px;
+    margin: 2vmax;
+    transform: translateX(-100%);
+    animation: contactFormInputs 1s ease-in-out forwards;
+    justify-content: center;
+}
+.loginForm>h4>p{
+    cursor: default;
+    transition: all 0.5s;
+}
+.loginForm>h4>p:hover{
+    transform: translateY(-10px);
+}
+.loginForm>div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vmax 8vmax;
+    box-sizing: border-box;
+}
+.loginForm>div>input{
+    padding: 1vmax 2vmax;
+    margin: 1vmax;
+    transform:translateX(-100vw);
+    border: 1px solid white;
+    font:100 1rem "ubantu";
+    border-radius: 30px;
+    animation: contactFormInputs 1s ease-in-out forwards 0.5s;
+    outline: none;
+}
+.loginForm>div>button{
+    padding: 1vmax 2vmax;
+    margin: 1vmax;
+    animation: contactFormbtn 1s ease-in-out forwards 0.5s;
+    transform: translateY(-100vh);
+}
+
+@media screen and (max-width:600px){
+    .loginContainer{
+        width:100%;
+        border-radius: 0;
+    }
+    .loginForm{
+        border-radius: 0;
+    }
+    .loginForm>div{
+        padding: 4vw 8vw;
+    }
+    .loginForm>div>input{
+        padding: 3vw 6vw;
+        margin: 2vw;
+    }
+    .loginForm>div>button{
+        padding: 3vw 6vw;
+        margin: 2vw;
+    }
+    .loginForm>h4{
+        margin-left: 3.5vmax;
+    }
+}
