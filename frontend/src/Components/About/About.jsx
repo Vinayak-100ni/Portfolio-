@@ -1,7 +1,7 @@
 import React from 'react'
 import "./About.css"
 import { Typography } from '@mui/material'
-import Img from "../../assets/Images/logo.png"
+import Img from "../../assets/Images/logo1.png"
 const About = () => {
   return (
     <div className="about">
