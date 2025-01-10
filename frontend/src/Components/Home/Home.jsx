@@ -11,6 +11,7 @@ import {
 } from "react-icons/si";
 import "../Contact/contact.css"
 import Login from '../Login/Login';
+import About from '../About/About';
 
 const Home = () => {
 
@@ -45,7 +46,7 @@ const Home = () => {
     scene.add(pointLight);
 
 
-    moon2.position.set(10, 5, 5);
+    moon2.position.set(6.5, 5, 5);
     camera.position.set(4, 2, 10);
 
     const animate = () => {
@@ -89,11 +90,10 @@ const Home = () => {
 
   return (
     <div className="home">
-
-      <canvas className="homeCanvas"></canvas>
-
+      <canvas className="homeCanvas">
+      </canvas>
       <div className='homelogin'>
-        <Login /></div>
+        <About /></div>
 
       <div className="homeContainer">
         <Typography variant='h3'>TimeLine</Typography>
@@ -115,7 +115,7 @@ const Home = () => {
             <img src="https://static.javatpoint.com/images/javascript/javascript_logo.png" alt="face3" />
           </div>
           <div className="homeCubeSKillsFaces homeCubeSKillsFace2">
-          <img src="https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png" alt="face5" />
+            <img src="https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png" alt="face5" />
           </div>
           <div className="homeCubeSKillsFaces homeCubeSKillsFace5">
             <img src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png" alt="face5" />

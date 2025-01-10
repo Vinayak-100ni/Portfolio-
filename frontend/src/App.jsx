@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import {Route,Routes} from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
@@ -12,24 +12,24 @@ import { getUser } from './actions/user'
 import { Typography } from '@mui/material'
 function App() {
 
-  const dispatch =useDispatch();
+  const dispatch = useDispatch();
 
-  useEffect(()=>{
-     dispatch(getUser());
-  },[dispatch]);
-  
+  useEffect(() => {
+    dispatch(getUser());
+  }, [dispatch]);
+
   return <>
-    <Header/>
-    <Typography variant="h5" style={{transform:`translate(0vw ,97vh)`, color:"white",marginTop:'-40px' ,overflowX:"hidden"}}><marquee> Backend  will  be  connected  soon.....</marquee></Typography>
+    <Header />
+    <Typography variant="h5" style={{ transform: `translate(0vw ,97vh)`, color: "white", marginTop: '-40px', overflowX: "hidden" }}></Typography>
 
-  <Routes>
-    <Route path='/' element={<Home />}/>
-    <Route path='/about' element={<About />}/>
-    <Route path='/projects' element={<Project />}/>
-    <Route path='/contact' element={<Contact />}/>
-    <Route path='/account' element={<Login />}/>
-  </Routes>
-  <Footer/>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/projects' element={<Project />} />
+      <Route path='/contact' element={<Contact />} />
+      <Route path='/account' element={<Login />} />
+    </Routes>
+    <Footer />
   </>
 }
 

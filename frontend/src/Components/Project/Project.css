@@ -83,8 +83,9 @@
     height: 100%;
     font: 100 1.5rem 'Edu SA Beginner';
     align-items: center;
+    color: rgba(255, 0, 0, 0.703);
     justify-content: center;
-    background-color: hsl(250, 100%, 75%);
+    background-color: hsla(249, 53%, 20%, 0.482);
 }
 
 .projectCard>div:first-child>h5 {
@@ -99,40 +100,47 @@
 .projectCard>div:last-child>h4 {
     text-align: center;
 }
-.projectCard>div:last-child>p{
+
+.projectCard>div:last-child>p {
     word-spacing: 5px;
     letter-spacing: 5px;
     text-align: right;
     margin: 20px;
 }
+
 .projectCard>div:last-child>h6 {
     font-family: 'Belanosima';
     font-weight: 100;
 }
-.projectCard>div>img{
+
+.projectCard>div>img {
     width: inherit;
 }
-.projectCard:hover >div:first-child{
+
+.projectCard:hover>div:first-child {
     filter: hue-rotate(240deg) blur(4px);
 }
 
 
-@media screen and (max-width:600px){
-    .projectCard{
+@media screen and (max-width:600px) {
+    .projectCard {
         flex-direction: column !important;
     }
-    .projectCard>div{
-        justify-content: center ;
+
+    .projectCard>div {
+        justify-content: center;
     }
-    .projectCard>div:last-child{
+
+    .projectCard>div:last-child {
         text-align: center;
     }
-    .projects>h3{
+
+    .projects>h3 {
         font-size: 4vmax;
     }
-    .projectsWrapper{
+
+    .projectsWrapper {
         border-radius: 100px 100px 0 0;
         padding: 0;
     }
 }
-

@@ -5,6 +5,10 @@ import { AiOutlineProject } from "react-icons/ai"
 import { Delete } from '@mui/icons-material'
 import Chatapp from "../../assets/Images/chatapp2.png"
 import textSpark from "../../assets/Images/textSpark.png"
+import Todo from "../../assets/Images/todo.png"
+import Blog from "../../assets/Images/blog.png"
+import IBI from "../../assets/Images/ibi.png"
+
 const Project = () => {
 
     const ProjectsCard = ({
@@ -31,10 +35,17 @@ const Project = () => {
 
     const projects = [
         {
-            url: "https://todo-list-vinayak.vercel.app",
-            projectImg: "https://media.licdn.com/dms/image/D5622AQHumfqz36ZyBg/feedshare-shrink_800/0/1686131661773?e=1695254400&v=beta&t=F2VbaAIQ971ID2Q7qjjfxQNTQx8M5ccrrHfSxLhuLg8",
-            description: "Streamline your day with our minimalist to-do app. Add and track daily tasks effortlessly.",
-            technologies: "Vite, React, Mui/material",
+            url: "https://blog-app-soni.vercel.app",
+            projectImg: Blog,
+            description: "A dynamic and interactive blog website where users can perform basic CRUD (Create, Read, Update, Delete) operations on post.",
+            technologies: "Appwrite, Reduxjs/toolkit, React, TinyMCE, React-router-dom",
+            title: ""
+        },
+        {
+            url: "https://info-bharat-interns-vinayak100nis-projects.vercel.app",
+            projectImg: IBI,
+            description: "A dynamic and interactive blog website where users can perform basic CRUD (Create, Read, Update, Delete) operations on post.",
+            technologies: "Appwrite, Reduxjs/toolkit, React, TinyMCE, React-router-dom",
             title: ""
         },
         {
@@ -45,8 +56,15 @@ const Project = () => {
             title: "ChatApp"
         },
         {
+            url: "https://todo-list-vinayak.vercel.app",
+            projectImg: Todo,
+            description: "Streamline your day with our minimalist to-do app. Add and track daily tasks effortlessly.",
+            technologies: "Vite, React, Mui/material",
+            title: ""
+        },
+        {
             url: "https://textspark.vercel.app/",
-            projectImg:textSpark,
+            projectImg: textSpark,
             description: "Easily format text, count words, and estimate reading time with textSpark. Simplify your tasks instantly.",
             technologies: "React",
             title: "textSpark"

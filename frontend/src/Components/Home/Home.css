@@ -158,13 +158,43 @@
         right: -300px;
     }
 }
-.homeContact{
+
+.homeContact {
     display: flex;
     justify-content: center;
     margin-top: -20vmax;
 }
-.homelogin{
+
+.homelogin {
     margin-top: -101vh;
-    filter: blur(4px);
+    /* filter: blur(.3px); */
 }
 
+/* In Home.css */
+
+.resumeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    /* To make it take the full viewport height */
+    background-color: black;
+    /* Black background */
+    color: rgba(255, 255, 255, 0.799);
+    /* White text */
+}
+
+.resumeContainer h2 {
+    font-size: 2.7rem;
+    /* You can adjust the size as needed */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .resumeContainer h2 {
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
+    }
+}

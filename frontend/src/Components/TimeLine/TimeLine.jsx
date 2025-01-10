@@ -6,34 +6,52 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import {Event} from '@mui/icons-material';
+import { Event } from '@mui/icons-material';
 import Typography from '@mui/material/Typography';
 
 
-const TimeLine = ({timelines=[]}) => {
+const TimeLine = ({ timelines = [] }) => {
+
+  const timeline = [
+    {
+      date: "OCT 2023",
+      title: "Intership",
+      subtitle: "TechnoHacks",
+    },
+    {
+      date: "2021-2025",
+      title: "B.Tech",
+      subtitle: "Rajiv Gandhi Proudyogiki Vishwavidyalaya"
+    },
+    {
+      date: "2019-2020",
+      title: "12TH",
+      subtitle: "St. Antony's Convent Hr. Sec. School"
+    },
+  ]
   return (
     <div>
       <Timeline position="alternate">
         {
-          timelines.map((item,index)=>(
+          timeline.map((item, index) => (
             <TimelineItem key={index}>
               <TimelineOppositeContent
-              sx={{m:"auto 0"}}
-              color="text.secondary">
-                x/x/xx
+                sx={{ m: "auto 0" }}
+                color="text.secondary">
+                {item.date}
               </TimelineOppositeContent>
 
               <TimelineSeparator>
-              <TimelineConnector/>
+                <TimelineConnector />
 
-                <TimelineDot> <Event/>  </TimelineDot>
+                <TimelineDot> <Event />  </TimelineDot>
 
-              <TimelineConnector/>
+                <TimelineConnector />
               </TimelineSeparator>
-            <TimelineContent>
-              <Typography variant='h6'>Timeline coming soon...</Typography>
-              <Typography>SubTitle coming soon...</Typography>
-            </TimelineContent>
+              <TimelineContent>
+                <Typography variant='h6'>{item.title}</Typography>
+                <Typography>{item.subtitle}</Typography>
+              </TimelineContent>
             </TimelineItem>
           ))
         }
